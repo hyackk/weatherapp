@@ -1,0 +1,9 @@
+weather_in_city:
+    path: /weather/{city}
+    controller: App\Controller\WeatherController::cityAction
+    requirements:
+        city: \d+
+        
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index

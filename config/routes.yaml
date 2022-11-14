@@ -1,0 +1,11 @@
+weather_in_city:
+    path: /weather/{locationId}
+    controller: App\Controller\WeatherController::cityAction
+    requirements:
+        locationId: \d+
+weather_country_city:
+    path: /weather/{country}/{city}
+    controller: App\Controller\WeatherController::countrycityAction
+app_logout:
+    path: /logout
+    methods: GET
